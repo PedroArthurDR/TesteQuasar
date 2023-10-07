@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <HeaderComponent />
+    <MainMap  />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
+import MainMap from "./components/MainMap.vue";
+import HeaderComponent from "./components/HeaderFooter/Header.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainMap,
+    HeaderComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-1442849073-648c673408c0f.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+  background-position: center center; /* Centraliza a imagem no elemento */
 }
 </style>
